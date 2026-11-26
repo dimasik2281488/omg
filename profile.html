@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <style>
+        body { margin: 0; min-height: 100vh; display: flex; align-items: center;
+               justify-content: center; background: #0d1117; color: #e6edf3;
+               font-family: Arial, sans-serif; }
+        .card { width: 340px; background: #161b22; border: 1px solid #30363d;
+                border-radius: 10px; padding: 24px; text-align: center; }
+        .ok { color: #3fb950; }
+        a { color: #7da2ff; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Привет, {{ username }}!</h1>
+        <p class="ok">✔ Регистрация прошла успешно.</p>
+        <a href="{{ url_for('logout') }}">Выйти</a>
+    </div>
+</body>
+</html>
